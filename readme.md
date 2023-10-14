@@ -1,0 +1,1 @@
+Na základe ENGETO kurzu frontendu vytváram štvrtý bonusový úkol, tentokrát už s flexboxom a mediaqueries pre sériu produktov.
