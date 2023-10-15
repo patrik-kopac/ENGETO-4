@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid red;
+    
 }
 
 .main {
@@ -12,6 +12,9 @@
     margin: 20px auto;
     font-family: 'Times New Roman', Times, serif;
 }
+
+
+
 
 /*........................................SHARED.............................*/
 .img {
@@ -22,14 +25,26 @@
 .hero .h3,
 .promo .h3,
 .hero-sale-label,
-.info-label {
+.info-label,
+.products-sale-label,
+.product-of-the-year-label,
+.add-to-cart-button1 {
     color: white;
 }
 
 .h1,
 .h2,
 .hero-sale-label,
-.hero-info-label {
+.hero-info-label,
+.products-sale-label,
+.product-of-the-year-label,
+.bestseller-label,
+.storage-label,
+.shipping-label,
+.price-text,
+.actual-price1,
+.actual-price2,
+.post-info-label {
     font-weight: 700;
 }
 
@@ -44,10 +59,18 @@
     text-decoration: none;
 }
 
+
+
+
 /*........................................HERO..................................*/
 .hero {
     margin: 30px 0;
     position: relative;
+}
+
+.hero:hover {
+    transform: scale(1.03);
+    transition: 0.25s;
 }
 
 .hero-img-container {
@@ -84,10 +107,13 @@
     padding: 28px 5px;
 }
 
-.hero-info-label:hover {
+.info-label:hover {
     transform: scale(1.1);
     transition: 0.25s;
+    background-color: rgb(201, 4, 4);
 }
+
+
 
 
 /*........................................PROMO................................*/
@@ -95,7 +121,6 @@
     margin: 30px 0;
     display: flex;
     justify-content: space-between;
-    
 }
 
 .promo1,
@@ -104,6 +129,13 @@
     flex-basis: calc(100% / 4);
     position: relative;
 }
+
+.promo1:hover,
+.promo2:hover,
+.promo3:hover {
+    transform: scale(1.05);
+    transition: 0.25s;
+} 
 
 .promo-img-container {
     width: 100%;
@@ -125,41 +157,242 @@
 
 
 
-/*.........................promo-1.....................*/
-
-
-
-/*.........................promo-2.....................*/
-
-
-
-/*.........................promo-3.....................*/
-
-
 
 /*.............................................PRODUCTS............................*/
 .products {
     margin: 30px 0;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: #E4F5E5;
 }
+
+.product1,
+.product2,
+.product3 {
+    flex-basis: calc(85% / 3);
+    height: 600px;
+    background-color: white;
+    position: relative;
+    border-radius: 10px;
+}
+
+.product1:hover,
+.product2:hover,
+.product3:hover {
+    transform: scale(1.03);
+    transition: 0.25s;
+} 
 
 .products-img-container {
     width: 100%;
-    height: 600px;
+    height: 200px;
 }
 
 .products-img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
+}
+
+.products .h2 {
+    line-height: 2rem;
+}
+
+.products-content {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.product-span {
+    display: inline-block;
+}
+
+.products-sale-label {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    background-color: rgb(245, 94, 94);
+    border-radius: 50%;
+    display: inline-block;
+    padding: 15px 5px;
+}
+
+.bestseller-label {
+    position: absolute;
+    left: 0;
+    top: 1rem;
+    background-color: rgb(252, 239, 124);
+    border-radius: 5px;
+    display: inline-block;
+    padding: 2px 7px;
+}
+
+.products .h2 {
+    font-size: 34px;
+    font-family: math;
+    line-height: 40px;
+}
+
+/*.........................product-1.....................*/
+.product1 .h2,
+.product1 .text {
+    padding: 10px 0;
+}
+
+.product1 .text {
+    font-size: 0.85rem;
+}
+
+.shipment {
+    background-color: #E2DFDF;
+    height: 40px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.shipping-label,
+.storage-label {
+   margin: 8px auto;
+}
+
+.shipping-label {
+    background-color: white;
+    color: red;
+    padding: 6px 3px;
+    border-radius: 2px;
+    font-size: 13px;
+    text-transform: uppercase;
+    border: 1px solid red;
+    max-width: 135px;
+}
+
+.storage-label {
+    padding: 5px;
+    font-size: 14px;
+    color: #5BA637;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.price-text,
+.usual-price,
+.actual-price1 {
+    margin: 10px 0;
+}
+
+.price-text {
+    font-size: 14px;
+}
+
+.usual-price {
+    color: grey;
+    text-decoration: line-through;
+    font-size: 13px;
+}
+
+.actual-price1 {
+    font-size: 1.3rem;
+}
+
+.add-to-cart-button1 {
+    background-color: #EE1411;
+    padding: 5px 0;
+    border-radius: 20px;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.add-to-cart-button1:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+    background-color: #bb0502;
+}
+
+/*.........................product-2.....................*/
+.product2 .h2,
+.product2 .text {
+    padding: 5px 0;
+}
+
+.product2 .text {
+    font-size: 0.85rem;
+}
+
+.product-of-the-year-label {
+    position: absolute;
+    left: 0;
+    top: 3rem;
+    background-color: rgb(245, 94, 94);
+    border-radius: 5px;
+    display: inline-block;
+    padding: 2px 7px;
+}
+
+.product-sale-container {
+    background: #FBC3C3;
+    height: 80px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+.product-price-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: calc(100% / 2.5);
+}
+
+.actual-price2 {
+    font-size: 1.4rem;
+    flex-basis: calc(100% / 1);
+}
+
+.discount {
+    font-size: 0.9rem;
+}
+
+.add-to-cart-button2 {
+    background: #D9D9D9;
+    border-radius: 5px;
+    padding: 5px 3px;
+    margin: 10px 0px;
+    border: 1px solid rgb(107, 106, 106);
+    flex-basis: calc(100% / 2.5);
+    text-align: center;
+    max-width: 80px;
+    text-decoration: none;
+    color: black;
+}
+
+.add-to-cart-button2:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+    background-color: #bdbcbc;
+}
+
+.post-info-label {
+    background: #CEEBC0;
+    border-radius: 3px;
+    text-align: center;
+    color: #599D37;
+    padding: 10px 0;
+    margin: 20px 0;
+    width: 100%;
 }
 
 
-/*.........................product-1.....................*/
-
-
-
-/*.........................product-2.....................*/
-
-
-
 /*.........................product-3.....................*/
+.product3 .h2,
+.product3 .text {
+    padding: 5px 0;
+}
+
+.product3 .text {
+    font-size: 0.85rem;
+}
