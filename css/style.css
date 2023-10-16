@@ -453,8 +453,9 @@
 @media (max-width: 1200px) {
     
     .shipping-label {
-        padding: 2px 0px;
+        padding: 2px 3px;
         margin: 5px 20px 5px 25px;
+        max-width: 100px;
         text-align: center;
         font-size: 12px;
     }
@@ -510,18 +511,95 @@
     .product3 {
         margin-top: 20px;
     }
+
+    .shipping-label {
+        padding: 2px 2px;
+        max-width: 100px;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .storage-label {
+        padding: 10px 25px;
+        margin: 0;
+    }
+
+    .products-content {
+        margin: 15px auto;
+    }
+
+    .products .h2 {
+        line-height: 35px;
+    }
+
+    .shipment {
+        margin: 5px auto;
+    }
+
+    .add-to-cart-button1 {
+        margin-top: 5px;
+    }
+}
+
+/*.......................768-889px.........................*/
+@media (max-width: 889px) {
+    .storage-label {
+        padding: 3px 25px;
+    }
 }
 
 
 
-/*.......................576-768px.........................*/
+/*.......................0-768px.........................*/
 @media (max-width: 768px) {
+    .promo {
+        flex-wrap: wrap;
+    }
+
+    .promo1,
+    .promo2,
+    .promo3 {
+        flex-basis: calc(100% / 1);
+        margin: 20px auto;
+    }
+
+    .hero .h1 {
+        font-size: 18px;
+    }
+
+    .hero .h3 {
+        top: 2.5rem;
+        font-size: 15px;
+    }
+
+    .product1,
+    .product2,
+    .product3 {
+        flex-basis: calc(85% / 1);
+        margin: 20px auto;
+    }
     
-}
+    .shipping-label {
+        padding: 7px 7px;
+        max-width: 200px;
+    }
 
+    .storage-label {
+        padding: 10px 25px;
+    }
 
+    .product2 img {
+        margin-top: 10px;
+    }
+    .products-content {
+        margin: 25px auto;
+    }
 
-/*.......................0-576px...........................*/
-@media (max-width: 576px) {
-    
+    .post-info-label {
+        margin: 20px 0;
+    }
+
+    .hero-img-container {
+        height: 65vh;
+    }
 }
