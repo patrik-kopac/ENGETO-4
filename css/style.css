@@ -139,6 +139,28 @@
     background-color: var(--color-darker-red);
 }
 
+/*----------------hero-media-queries-------------*/
+@media (max-width: 768px) {
+    .hero .h1 {
+        font-size: 25px;
+        top: 3rem;
+    }
+
+    .hero .h3 {
+        top: 7rem;
+        font-size: 18px;
+    }
+
+    .hero-img-container {
+        height: 65vh;
+    }
+
+    .hero-sale-label {
+        right: 3rem;
+        top: 10rem;
+    }
+}
+
 
 
 
@@ -196,6 +218,36 @@
     left: 1rem;
     bottom: 4rem;
     margin-right: 13px;
+}
+
+/*----------------promo-media-queries-------------*/
+@media (max-width: 1200px) {
+    .promo1,
+    .promo2,
+    .promo3 {
+        flex-basis: calc(100% / 3.6);
+    }
+}
+
+@media (max-width: 992px) {
+    .promo1,
+    .promo2,
+    .promo3 {
+        flex-basis: calc(100% / 3.2);
+    }
+}
+
+@media (max-width: 768px) {
+    .promo {
+        flex-wrap: wrap;
+    }
+
+    .promo1,
+    .promo2,
+    .promo3 {
+        flex-basis: calc(100% / 1);
+        margin: 20px auto;
+    }
 }
 
 
@@ -446,35 +498,8 @@
     font-size: 0.85rem;
 }
 
-
-
-
-
-/*................................MEDIA QUERIES...............................*/
-
-/*.......................992-1200px.......................*/
+/*----------------products-media-queries-------------*/
 @media (max-width: 1200px) {
-
-    .products .h2 {
-        font-size: 28px;
-        line-height: 30px;
-    }
-
-    .product-price-container {
-        flex-basis: calc(100% / 2);
-    }
-
-    .post-info-label {
-        padding: 3px 0;
-        margin: 10px 0;
-    }
-
-    .promo1,
-    .promo2,
-    .promo3 {
-        flex-basis: calc(100% / 3.6);
-    }
-
     .shipment {
         height: 45px;
     }
@@ -494,18 +519,23 @@
         padding: 1px;
         width: 64px;
     }
-}
 
-
-
-/*.......................768-992px.........................*/
-@media (max-width: 992px) {
-    .promo1,
-    .promo2,
-    .promo3 {
-        flex-basis: calc(100% / 3.2);
+    .product1 .h2,
+    .product1 .text {
+        padding: 5px 0;
     }
 
+    .price-text {
+        margin-top: 5px;
+    }
+
+    .products .h2 {
+        line-height: 32px;
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 992px) {
     .products {
         flex-wrap: wrap;
         justify-content: space-between;
@@ -555,30 +585,7 @@
     }
 }
 
-
-/*.......................400-768px.........................*/
 @media (max-width: 768px) {
-    .promo {
-        flex-wrap: wrap;
-    }
-
-    .promo1,
-    .promo2,
-    .promo3 {
-        flex-basis: calc(100% / 1);
-        margin: 20px auto;
-    }
-
-    .hero .h1 {
-        font-size: 25px;
-        top: 3rem;
-    }
-
-    .hero .h3 {
-        top: 7rem;
-        font-size: 18px;
-    }
-
     .product1,
     .product2,
     .product3 {
@@ -596,18 +603,8 @@
     .post-info-label {
         margin: 20px 0;
     }
-
-    .hero-img-container {
-        height: 65vh;
-    }
-
-    .hero-sale-label {
-        right: 3rem;
-        top: 10rem;
-    }
 }
 
-/*.......................0-400px.........................*/
 @media (max-width: 400px) {
     .shipment {
         height: 45px;
@@ -629,7 +626,7 @@
         width: 64px;
     }
 
-    .product1 .h1,
+    .product1 .h2,
     .product1 .text {
         padding: 5px 0;
     }
