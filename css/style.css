@@ -309,11 +309,14 @@
     font-size: 13px;
     text-transform: uppercase;
     border: 1px solid var(--color-red);
-    max-width: 135px;
+    width: 132px;
+    height: 25px;
 }
 
 .storage-label {
-    padding: 5px;
+    padding: 4px;
+    width: 108px;
+    height: 25px;
     font-size: 14px;
     color: var(--color-green);
     text-decoration: underline;
@@ -451,19 +454,6 @@
 
 /*.......................992-1200px.......................*/
 @media (max-width: 1200px) {
-    
-    .shipping-label {
-        padding: 2px 3px;
-        margin: 5px 20px 5px 25px;
-        max-width: 100px;
-        text-align: center;
-        font-size: 12px;
-    }
-
-    .storage-label {
-        padding: 3px 25px;
-        margin: 0;
-    }
 
     .products .h2 {
         font-size: 28px;
@@ -483,6 +473,26 @@
     .promo2,
     .promo3 {
         flex-basis: calc(100% / 3.6);
+    }
+
+    .shipment {
+        height: 45px;
+    }
+
+    .shipping-label {
+        width: 70px;
+        height: 35px;
+        padding: 3px;
+    }
+
+    .shipping-label,
+    .storage-label {
+        margin: 5px auto;
+    }
+
+    .storage-label {
+        padding: 1px;
+        width: 64px;
     }
 }
 
@@ -512,18 +522,6 @@
         margin-top: 20px;
     }
 
-    .shipping-label {
-        padding: 2px 2px;
-        max-width: 100px;
-        text-align: center;
-        font-size: 12px;
-    }
-
-    .storage-label {
-        padding: 10px 25px;
-        margin: 0;
-    }
-
     .products-content {
         margin: 15px auto;
     }
@@ -532,25 +530,33 @@
         line-height: 35px;
     }
 
-    .shipment {
-        margin: 5px auto;
-    }
-
     .add-to-cart-button1 {
         margin-top: 5px;
     }
-}
 
-/*.......................768-889px.........................*/
-@media (max-width: 889px) {
+    .shipment {
+        height: 40px;
+    }
+
+    .shipping-label {
+        width: 132px;
+        height: 25px;
+        padding: 6px 3px;
+    }
+
+    .shipping-label,
     .storage-label {
-        padding: 3px 25px;
+        margin: 8px auto;
+    }
+
+    .storage-label {
+        padding: 4px;
+        width: 108px;
     }
 }
 
 
-
-/*.......................0-768px.........................*/
+/*.......................400-768px.........................*/
 @media (max-width: 768px) {
     .promo {
         flex-wrap: wrap;
@@ -564,12 +570,13 @@
     }
 
     .hero .h1 {
-        font-size: 18px;
+        font-size: 25px;
+        top: 3rem;
     }
 
     .hero .h3 {
-        top: 2.5rem;
-        font-size: 15px;
+        top: 7rem;
+        font-size: 18px;
     }
 
     .product1,
@@ -577,15 +584,6 @@
     .product3 {
         flex-basis: calc(85% / 1);
         margin: 20px auto;
-    }
-    
-    .shipping-label {
-        padding: 7px 7px;
-        max-width: 200px;
-    }
-
-    .storage-label {
-        padding: 10px 25px;
     }
 
     .product2 img {
@@ -601,5 +599,38 @@
 
     .hero-img-container {
         height: 65vh;
+    }
+
+    .hero-sale-label {
+        right: 3rem;
+        top: 10rem;
+    }
+}
+
+/*.......................0-400px.........................*/
+@media (max-width: 400px) {
+    .shipment {
+        height: 45px;
+    }
+
+    .shipping-label {
+        width: 70px;
+        height: 35px;
+        padding: 3px;
+    }
+
+    .shipping-label,
+    .storage-label {
+        margin: 5px auto;
+    }
+
+    .storage-label {
+        padding: 1px;
+        width: 64px;
+    }
+
+    .product1 .h1,
+    .product1 .text {
+        padding: 5px 0;
     }
 }
